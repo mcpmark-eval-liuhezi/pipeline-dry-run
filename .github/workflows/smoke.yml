@@ -1,0 +1,9 @@
+name: smoke
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "SMOKE-CHECK-V1: pipeline dry run"
